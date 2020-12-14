@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginLeft="@dimen/dp_10"
+        android:id="@+id/liJu_image"
+        android:src="@drawable/ic_camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp">
+    </ImageView>
+    <TextView
+        android:id="@+id/liJu_name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/liJu_image"
+        android:text="以例举题"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:layout_below="@+id/liJu_name"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/liJu_image"
+        android:id="@+id/liJu_tieShu"
+        android:text="贴数：13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+</RelativeLayout>

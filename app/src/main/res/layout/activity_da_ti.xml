@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_daTi"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.DaTiActivity">
+    <com.yang.mymedicalpoject.utils.MyTitleBar
+        android:id="@+id/myTitle"
+        app:titleText="答题"
+        app:titleColor="@color/white"
+        app:titleSize="7dp"
+        app:titleDrawable="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.yang.mymedicalpoject.utils.MyTitleBar>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/myTitle"
+        android:id="@+id/mVp"
+        android:layout_above="@+id/rl_botton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="@+id/myTitle"
+        app:layout_constraintBottom_toTopOf="@+id/rl_botton"
+        ></androidx.viewpager.widget.ViewPager>
+    <LinearLayout
+        android:id="@+id/rl_botton"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/et_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/checkbox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/checkbox_style2"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="收藏"
+            android:textColor="@color/txt_33"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_dati_card"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_dati_card2"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="答题卡"
+            android:textColor="@color/txt_33"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/icon_time"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="@color/tab_blue_selected"
+            android:textSize="13sp" />
+
+
+    </LinearLayout>
+</RelativeLayout>

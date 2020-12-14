@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:id="@+id/rl"
+    android:layout_marginTop="5dp"
+    android:background="@color/colorWhite"
+    >
+
+    <ImageView
+        android:layout_marginLeft="12dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/image_school"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_alignTop="@+id/image_school"
+                android:id="@+id/tv_content"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/image_school"
+                android:textSize="15sp"
+                android:textColor="#444444"
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_alignBottom="@+id/image_school"
+                android:id="@+id/tv_school_name"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/image_school"
+                android:textSize="13sp"
+                android:textColor="@color/txt_66"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_alignBottom="@+id/image_school"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:drawablePadding="3dp"
+        android:drawableLeft="@drawable/pinglun_shequ"
+        android:layout_toLeftOf="@+id/tv_guan_num"
+        android:id="@+id/txt_ping_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/txt_99"
+        android:textSize="13sp" />
+            <TextView
+                android:drawablePadding="5dp"
+                android:layout_alignBottom="@+id/image_school"
+                android:paddingRight="18dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/shoucang_shequ"
+                android:id="@+id/tv_guan_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/txt_99"
+                android:textSize="13sp" />
+
+
+
+   <View
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginTop="8dp"
+    android:layout_below="@+id/image_school"
+    android:id="@+id/view"
+       android:background="@color/colorLine1"
+    android:layout_width="match_parent"
+    android:layout_height="0.8dp"/>
+        </RelativeLayout>
+

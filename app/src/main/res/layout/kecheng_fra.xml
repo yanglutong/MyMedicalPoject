@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+      <RelativeLayout
+          android:id="@+id/re1_kecheng"
+          android:layout_width="match_parent"
+          android:background="#55A8DE"
+          android:layout_height="wrap_content">
+          <androidx.appcompat.widget.Toolbar
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="课程"
+                      android:textColor="#fff" />
+          </androidx.appcompat.widget.Toolbar>
+      </RelativeLayout>
+ <com.youth.banner.Banner
+     android:layout_below="@+id/re1_kecheng"
+     android:layout_width="match_parent"
+     android:layout_height="200dp"
+     android:layout_marginTop="3dp"
+     android:id="@+id/ke_ban"/>
+    <RelativeLayout
+        android:id="@+id/re2_ke"
+        android:layout_below="@+id/ke_ban"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/background_light">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:id="@+id/laba"
+            android:src="@drawable/gonggao"/>
+
+        <com.xj.marqueeview.MarqueeView
+        android:layout_toRightOf="@+id/laba"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            app:mvAnimDuration="500"
+            app:mvDirection="top_to_bottom"
+            app:mvInterval="3000"
+            android:id="@+id/ke_marquee"
+            />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/re2_ke"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="精品课程"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#000"
+            android:textSize="30sp"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="#fff"
+            android:layout_below="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ke_recy_liang" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.forumfragment.school.SchoolLoadMoreActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/guanbi_2"
+                android:layout_width="25dp"
+                android:layout_height="25dp">
+            </ImageView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <TextView
+               android:text="我的模块"
+               android:layout_marginLeft="20dp"
+               android:textColor="@android:color/black"
+               android:textSize="22sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+           </TextView>
+            <TextView
+
+               android:text="   点击取消 长按排序 （固定模块不可调）"
+               android:textColor="@color/colorPrimary"
+               android:textSize="12sp"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content">
+           </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

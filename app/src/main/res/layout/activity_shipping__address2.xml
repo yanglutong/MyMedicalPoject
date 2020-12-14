@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_DC"
+    android:id="@+id/activity_popup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.Shipping_AddressActivity">
+
+    <com.yang.mymedicalpoject.utils.MyTitleBar
+        android:id="@+id/myTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:titleColor="@color/white"
+        app:titleDrawable="@color/colorPrimary"
+        app:titleSize="6dp"
+        app:titleText="管理收货地址"
+        tools:layout_editor_absoluteX="-16dp"></com.yang.mymedicalpoject.utils.MyTitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/tv_save"
+        app:layout_constraintTop_toBottomOf="@+id/myTitle"
+        app:layout_constraintVertical_bias="0.022"
+        tools:layout_editor_absoluteX="-16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="收货人：  "
+                        android:textColor="@color/black"
+                        android:textSize="16dp">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/et_address1"
+                        android:textSize="13sp"
+                        android:background="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </EditText>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/color_DC"></View>
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="手机号码：  "
+                        android:textColor="@color/black"
+                        android:textSize="16dp">
+                    </TextView>
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:textSize="13sp"
+                        android:background="@null"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </EditText>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/wo_nor"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="选联系人"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/color_DC" />
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="所在地区:"
+                android:textColor="@color/black"
+                android:textSize="16dp"></TextView>
+            <EditText
+                android:id="@+id/tv_region"
+                android:layout_weight="5"
+                android:cursorVisible="false"
+            android:textSize="@dimen/sp_14"
+                android:background="@null"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </EditText>
+            <ImageView
+                android:layout_weight="1"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/zhankai">
+            </ImageView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="13dp"
+            android:background="@color/color_DC" />
+        <EditText
+            android:id="@+id/et_detail"
+            android:background="@null"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:paddingLeft="5dp"
+            android:layout_marginLeft="12dp"
+            android:paddingBottom="@dimen/dp_40"
+            android:hint="请输入详细的街道地址"
+            android:textColor="@color/black">
+        </EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="保存地址"
+        android:id="@+id/tv_save"
+        android:background="@color/colorPrimary"
+        android:textSize="@dimen/sp_16"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>

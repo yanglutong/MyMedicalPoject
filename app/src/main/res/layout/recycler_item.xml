@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="user"
+            type="com.yang.mymedicalpoject.databingdingrecyclerview.Bean.DataBean" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            app:layout_constraintLeft_toRightOf="@+id/iv_image"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tv_text"
+            android:text="@{user.imagePath}"
+            android:layout_width="100dp"
+            android:layout_height="100dp"></TextView>
+
+        <ImageView
+            android:id="@+id/iv_image"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:yang="@{user.imagePath}"
+            android:layout_width="100dp"
+            android:layout_height="100dp"></ImageView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

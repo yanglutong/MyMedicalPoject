@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.yang.mymedicalpoject.utils.MyTitleBar
+        app:titleSize="5dp"
+        android:id="@+id/myTitle"
+        app:titleText="答题卡"
+        app:titleColor="@color/white"
+        app:titleDrawable="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+    </com.yang.mymedicalpoject.utils.MyTitleBar>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:text="2020真题"
+        android:textSize="15sp"
+        android:textColor="@color/txt_26"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       ></TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_item"
+        android:background="@color/white"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_above="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tv_submit"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+    </TextView>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1131576844/HeaderAndFooterRecyclerView-master.iml" filepath="$PROJECT_DIR$/.idea/modules/1131576844/HeaderAndFooterRecyclerView-master.iml" group="HeaderAndFooterRecyclerView-master" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/library.iml" filepath="$PROJECT_DIR$/.idea/modules/library.iml" group="HeaderAndFooterRecyclerView-master/library" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1963052275/sample.iml" filepath="$PROJECT_DIR$/.idea/modules/-1963052275/sample.iml" group="HeaderAndFooterRecyclerView-master/sample" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1416072665/samplePlus.iml" filepath="$PROJECT_DIR$/.idea/modules/-1416072665/samplePlus.iml" group="HeaderAndFooterRecyclerView-master/samplePlus" />
+    </modules>
+  </component>
+</project>

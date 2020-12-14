@@ -1,0 +1,7 @@
+include ':httplibrary'
+include ':MyRegionSelect'
+include ':mysqlite'
+include ':library'
+include ':mvplibrary'
+include ':app'
+rootProject.name = "MyMedicalPoject"

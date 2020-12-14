@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yang.mymedicalpoject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".BaseApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.Shipping_AddressActivity2"></activity>
+        <activity android:name=".ui.activity.Shipping_AddressActivity" />
+        <activity android:name=".ui.activity.MyCourseActivity" />
+        <activity android:name=".ui.activity.AboutActivity" />
+        <activity android:name=".ui.activity.DaTiActivity" />
+        <activity android:name=".ui.activity.HomeLiNianActivity" />
+        <activity android:name=".bean.ShoppingCartActivity" />
+        <activity android:name=".ui.activity.ShoppingInfoActivity" />
+        <activity android:name=".instance_code.shoppingcart.ShoppingActivity" />
+        <activity android:name=".fragment.forumfragment.school.SchoolLoadMoreActivity" />
+        <activity android:name=".ui.activity.HomeActivity" />
+        <activity android:name=".register.view.UserRegisterActivity" />
+        <activity android:name=".ui.activity.ForGetPasswordActivity" />
+        <activity android:name=".shijianfenfa.ShiJianFenFaActivity" />
+        <activity android:name=".databingdingrecyclerview.DataBinDingRecyclerView" />
+        <activity android:name=".databingding.DataBinDingActivity" />
+        <activity android:name=".ui.activity.TestActivity" />
+        <activity android:name=".ui.activity.web.WebViewActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".ui.activity.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

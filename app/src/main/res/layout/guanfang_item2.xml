@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_marginTop="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lin"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/liJu_image"
+            android:src="@drawable/shoucang"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+        </ImageView>
+        <TextView
+
+            android:id="@+id/liJu_name"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/liJu_image"
+            android:text="以例举题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+        <TextView
+            android:gravity="right"
+            android:layout_below="@+id/liJu_name"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@+id/liJu_image"
+            android:id="@+id/liJu_tieShu"
+            android:text="2020-8-55"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/lin"
+        android:textColor="@color/colorBlack"
+        android:text="系学生考研选对科室，一生受益"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:text="一生"
+        android:id="@+id/text2"
+        android:lines="2"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+    <ImageView
+        android:id="@+id/i"
+        android:layout_alignBottom="@+id/w12"
+        android:layout_toLeftOf="@+id/w12"
+        android:layout_marginRight="2dp"
+        android:layout_below="@+id/text2"
+        android:src="@drawable/pinglun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/w12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:text="1561"></TextView>
+</RelativeLayout>
