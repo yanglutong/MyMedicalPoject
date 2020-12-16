@@ -46,6 +46,7 @@ public class HomeFragment extends BaseMvpFragment<HomeConstants.MyHomeView, Home
     private RadioButton rb_6;
     private Bundle bundle;
     private RadioButton rb_1;
+    private RadioGroup rb_group2;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -69,6 +70,8 @@ public class HomeFragment extends BaseMvpFragment<HomeConstants.MyHomeView, Home
         rb_6 = view.findViewById(R.id.rb_6);
         rb_group1 = view.findViewById(R.id.rb_Group1);
 
+        rb_group2 = view.findViewById(R.id.rb_Group2);
+
         initClick();
 
         //网络请求
@@ -76,17 +79,25 @@ public class HomeFragment extends BaseMvpFragment<HomeConstants.MyHomeView, Home
     }
 
     private void initClick() {
-        rb_group1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        rb_group2.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i){
                     case R.id.rb_1:
+                        Toast.makeText(activity, "转型", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getActivity(), English_ZhuanXIang_Activity.class);
                         intent.putExtra("type", "3");
                         startActivity(intent);
-                        getActivity().finish();
-
+                        rb_1.setChecked(false);
                         break;
+                }
+            }
+        });
+        rb_group1.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
+                switch (i){
+
                     case R.id.rb_3:
                         //选中跳转到activity
                         MyApp.openActivity(getContext(), HomeLiNianActivity.class);

@@ -67,7 +67,7 @@ finish();
         //政治专项
         Map<String, Object> map = GlobalConfig.getInstance().getBaseHeades();
         GlobalConfig.getInstance().setBaseUrl("https://app.yiyanmeng.com/index.php/");
-        new HttpClient.Builder()
+        new HttpClient.Buidler()
                 .setApiUrl("shitizz/ti_type_list")
                 .post()
                 .setHeadres(map)
@@ -105,8 +105,8 @@ finish();
     }
 
     private void initData() {
-        Map<String, Object> map = Conifg.getInstance().getBaseHeades();
-        Conifg.getInstance().setBaseUrl("https://app.yiyanmeng.com/index.php/");
+        Map<String, Object> map = GlobalConfig.getInstance().getBaseHeades();
+        GlobalConfig.getInstance().setBaseUrl("https://app.yiyanmeng.com/index.php/");
         new HttpClient.Buidler()
                 .setApiUrl("shitien/ti_type_list")
                 .post()
