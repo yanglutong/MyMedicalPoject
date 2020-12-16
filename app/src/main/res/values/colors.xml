@@ -3,7 +3,7 @@
     <color name="colorPrimary">#55A8DE</color>
     <color name="colorPrimaryDark">#55A8DE</color>
     <color name="colorAccent">#55A8DE</color>
-
+    <color name="colorbtnlogin">#55A8DE</color>
     <color name="cal_divider">#FFEDEDED</color>
     <color name="colorTheme">#55A8DE</color>
     <color name="colorWhite">#ffffff</color>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/i1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/xiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img"
+        android:text="第一项"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"/>
+    <TextView
+        android:id="@+id/xue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/xiang"
+        android:textColor="#000"
+        android:text="内科"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:id="@+id/jie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/xue"
+        android:text="节"
+        android:layout_toRightOf="@+id/xiang"
+        android:layout_marginTop="10dp" />
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="15dp"
+        android:src="@mipmap/return1"/>
+
+</RelativeLayout>

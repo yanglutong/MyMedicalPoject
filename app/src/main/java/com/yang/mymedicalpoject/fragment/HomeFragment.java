@@ -3,6 +3,7 @@ package com.yang.mymedicalpoject.fragment;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.util.Log;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 import com.example.mvplibrary.base.fragment.BaseMvpFragment;
 import com.google.android.material.tabs.TabLayout;
 import com.yang.mymedicalpoject.R;
+import com.yang.mymedicalpoject.activity.English_ZhuanXIang_Activity;
 import com.yang.mymedicalpoject.base.MyApp;
 import com.yang.mymedicalpoject.base.adapter.PagerAdapter;
 import com.yang.mymedicalpoject.fragment.homefragment.Fragment2;
@@ -43,6 +45,7 @@ public class HomeFragment extends BaseMvpFragment<HomeConstants.MyHomeView, Home
     //收藏
     private RadioButton rb_6;
     private Bundle bundle;
+    private RadioButton rb_1;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -59,6 +62,7 @@ public class HomeFragment extends BaseMvpFragment<HomeConstants.MyHomeView, Home
     @Override
     protected void initDataMvp(View view) {
         tab = view.findViewById(R.id.tab_channel);
+        rb_1 = view.findViewById(R.id.rb_1);
         mVp = view.findViewById(R.id.viewPager);
         rb_3 = view.findViewById(R.id.rb_3);
         rb_4 = view.findViewById(R.id.rb_4);
@@ -76,6 +80,13 @@ public class HomeFragment extends BaseMvpFragment<HomeConstants.MyHomeView, Home
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i){
+                    case R.id.rb_1:
+                        Intent intent = new Intent(getActivity(), English_ZhuanXIang_Activity.class);
+                        intent.putExtra("type", "3");
+                        startActivity(intent);
+                        getActivity().finish();
+
+                        break;
                     case R.id.rb_3:
                         //选中跳转到activity
                         MyApp.openActivity(getContext(), HomeLiNianActivity.class);
