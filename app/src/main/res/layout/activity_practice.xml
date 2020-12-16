@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.PracticeActivity">
+
+
+    <com.yang.mymedicalpoject.utils.MyTitleBar
+        android:id="@+id/include"
+        app:titleDrawable="@color/colorPrimary"
+        app:titleColor="@color/white"
+        app:titleSize="5dp"
+        app:titleText="真题模拟"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_below="@+id/include"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorWhite"
+        app:tabBackground="@null"
+        app:tabSelectedTextColor="@color/tab_blue_selected"
+        app:tabTextColor="@color/txt_99"/>
+
+
+    <com.yang.mymedicalpoject.utils.MyViewPager
+        android:id="@+id/viewPager"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tab_layout"
+        />
+
+</RelativeLayout>

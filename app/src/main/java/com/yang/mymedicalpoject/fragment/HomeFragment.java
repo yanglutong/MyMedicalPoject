@@ -21,7 +21,9 @@ import com.yang.mymedicalpoject.fragment.homefragment.HomeConstants;
 import com.yang.mymedicalpoject.fragment.homefragment.bean.HomeBean;
 import com.yang.mymedicalpoject.fragment.homefragment.model.HomeModel;
 import com.yang.mymedicalpoject.fragment.homefragment.presenter.HomePresenter;
+import com.yang.mymedicalpoject.ui.activity.CollectActivity;
 import com.yang.mymedicalpoject.ui.activity.HomeLiNianActivity;
+import com.yang.mymedicalpoject.ui.activity.PracticeActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -40,6 +42,7 @@ public class HomeFragment extends BaseMvpFragment<HomeConstants.MyHomeView, Home
     private RadioButton rb_4;
     //收藏
     private RadioButton rb_6;
+    private Bundle bundle;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -79,10 +82,16 @@ public class HomeFragment extends BaseMvpFragment<HomeConstants.MyHomeView, Home
                         rb_3.setChecked(false);
                         break;
                         case R.id.rb_4:
+                            bundle = new Bundle();
+                            bundle.putInt("type", 2);
+                            bundle.putInt("mainType", 1);
+                            //模拟考试
+                            MyApp.openActivity(getActivity(), PracticeActivity.class, bundle);
 
                         break;
                         case R.id.rb_6:{
-
+                                //跳转到收藏界面
+                            MyApp.openActivity(getActivity(), CollectActivity.class);
                         }
                         break;
                     default:

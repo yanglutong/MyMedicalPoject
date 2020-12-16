@@ -22,7 +22,6 @@
         </androidx.recyclerview.widget.RecyclerView>
         <com.scwang.smartrefresh.layout.footer.ClassicsFooter
             style="@style/RefreshStyle"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </com.scwang.smartrefresh.layout.footer.ClassicsFooter>

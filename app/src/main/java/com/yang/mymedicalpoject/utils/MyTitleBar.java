@@ -44,6 +44,12 @@ public class MyTitleBar extends LinearLayout implements View.OnClickListener {
         if(text.equals("答题卡")){
             include_manager.setVisibility(GONE);
         }
+        if(text.equals("真题模拟")){
+            include_manager.setVisibility(GONE);
+        }
+        if(text.equals("收藏")){
+            include_manager.setVisibility(GONE);
+        }
         if(text.equals("管理收货地址")){
             include_manager.setVisibility(GONE);
         }
