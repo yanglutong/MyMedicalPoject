@@ -8,7 +8,19 @@
     <color name="colorTheme">#55A8DE</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
-
+    <color name="colorblack">#000</color>
+    <color name="colorBlue">#60D5E9</color>
+    <color name="colorhui">#938778</color>
+    <color name="colorxiahua">#DCDCDC</color>
+    <color name="colorqianhui">#F5F5F5</color>
+    <color name="colorwhite">#fff</color>
+    <color name="colororgin">#F27022</color>
+    <color name="colororpin">#F0F5F7</color>
+    <color name="colororqianhui">#F4F4F4</color>
+    <color name="coloroRed">#EF3F32</color>
+    <color name="coloroHuiHUi">#BABABA</color>
+    <color name="coloroshenblue">#4C8FFE</color>
+    <color name="coloroqianhong">#FEE4DE</color>
     <!--分割线-->
     <color name="colorLine">#D3D3D3</color>
     <!--分割线-->

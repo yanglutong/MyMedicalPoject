@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mTitle"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context=".activity.TabZiActivity">
+    <com.yang.mymedicalpoject.utils.MyTitleBar
+        android:id="@+id/myTitle"
+        app:titleColor="@color/white"
+        app:titleSize="5dp"
+        app:titleText="答题"
+        app:titleDrawable="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.yang.mymedicalpoject.utils.MyTitleBar>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/vp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_centerVertical="true"
+            android:id="@+id/ping"
+            android:paddingLeft="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/kuang"
+            android:hint="请输入评论"/>
+        <TextView
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#f00"
+            android:layout_alignTop="@+id/xiao"
+            android:layout_toRightOf="@+id/ping"
+            android:layout_marginLeft="40dp" />
+        <ImageView
+            android:paddingTop="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_message"
+            android:layout_toRightOf="@+id/ping"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/xiao"/>
+        <ImageView
+            android:id="@+id/shou"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/xing"
+            android:layout_toLeftOf="@+id/sikuai"
+            android:layout_marginRight="60dp"/>
+
+        <ImageView
+            android:paddingTop="10dp"
+            android:id="@+id/sikuai"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@mipmap/icon_dati_card2"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+
+
+
+    </RelativeLayout>
+</LinearLayout>

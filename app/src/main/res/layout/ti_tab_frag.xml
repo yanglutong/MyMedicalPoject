@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--大的frag-->
+    <!-- <androidx.recyclerview.widget.RecyclerView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:id="@+id/recy"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgdan"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/icon_dati_single" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imgdan"
+            android:text="dddddd"
+            android:textColor="#000" />
+
+
+
+<!--radio-->
+        <LinearLayout
+
+            android:id="@+id/xuanxiang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/r1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/A"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="A"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/Atitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="Adddddddddddddd"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/B"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="B"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/Btitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="Adddddddddddddd"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/C"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="C"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/Ctitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="Adddddddddddddd"
+                        android:textColor="#000" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/D"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="D"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:id="@+id/Dtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="Adddddddddddddd"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+                    android:id="@+id/li5"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/E"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="E"
+                        android:textColor="#000" />
+                    <TextView
+                        android:id="@+id/Etitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="Adddddddddddddd"
+                        android:textColor="#000" />
+                </LinearLayout>
+            </RadioGroup>
+
+        </LinearLayout>
+
+     <!--   &lt;!&ndash;  &lt;!&ndash;提交&ndash;&gt;&ndash;&gt;-->
+        <Button
+            android:visibility="gone"
+            android:id="@+id/ok"
+            android:layout_width="210dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/xuanxiang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_shape"
+            android:text="提交"
+            android:textColor="#fff"
+           />
+   <!--     &lt;!&ndash;  &lt;!&ndash;答案&ndash;&gt;&ndash;&gt;-->
+        <LinearLayout
+            android:id="@+id/da"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xuanxiang"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="45dp"
+            android:visibility="gone"
+          >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="答案："
+                android:textColor="#f00" />
+
+            <TextView
+                android:id="@+id/da_an"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#f00" />
+
+        </LinearLayout>
+      <!--  &lt;!&ndash;  &lt;!&ndash;试题详解&ndash;&gt;&ndash;&gt;-->
+        <RelativeLayout
+            android:id="@+id/shitijiangjie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/da"
+            android:layout_marginTop="70dp"
+            android:background="#fff"
+            android:visibility="gone"
+          >
+
+            <View
+                android:id="@+id/xian1"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/coloroHuiHUi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="试题详解" />
+
+            <View
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/coloroHuiHUi" />
+
+            <TextView
+                android:id="@+id/g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/xian1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="官方解读:"
+                android:textColor="@color/colorbtnlogin" />
+
+            <TextView
+                android:id="@+id/xiangqing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="40dp"
+                android:layout_toRightOf="@+id/g"
+                android:text="sss" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

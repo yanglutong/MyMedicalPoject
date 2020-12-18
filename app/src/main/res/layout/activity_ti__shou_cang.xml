@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Ti_ShouCangActivity">
+    <LinearLayout
+        android:id="@+id/li"
+        android:background="@color/colorbtnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/fanhui"
+            android:paddingTop="15dp"
+            android:id="@+id/fanhui"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#fff"
+            android:text="收藏"
+            android:paddingRight="40dp"
+            android:paddingTop="15dp"
+            android:gravity="center_horizontal"
+            android:id="@+id/title"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_below="@+id/li"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        app:tabSelectedTextColor="@color/colorbtnlogin"
+        android:id="@+id/ti_li_tab"/>
+    <RelativeLayout
+        android:layout_below="@+id/ti_li_tab"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ti_li_rela"/>
+
+</RelativeLayout>

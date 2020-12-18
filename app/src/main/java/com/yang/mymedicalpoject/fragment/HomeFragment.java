@@ -16,6 +16,8 @@ import com.example.mvplibrary.base.fragment.BaseMvpFragment;
 import com.google.android.material.tabs.TabLayout;
 import com.yang.mymedicalpoject.R;
 import com.yang.mymedicalpoject.activity.English_ZhuanXIang_Activity;
+import com.yang.mymedicalpoject.activity.Ti_ShouCangActivity;
+import com.yang.mymedicalpoject.activity.Ti_Ying_Activity;
 import com.yang.mymedicalpoject.base.MyApp;
 import com.yang.mymedicalpoject.base.adapter.PagerAdapter;
 import com.yang.mymedicalpoject.fragment.homefragment.Fragment2;
@@ -83,12 +85,30 @@ public class HomeFragment extends BaseMvpFragment<HomeConstants.MyHomeView, Home
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i){
-                    case R.id.rb_1:
+                    case R.id.rb_1:{
+                        //英语专项
                         Toast.makeText(activity, "转型", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getActivity(), English_ZhuanXIang_Activity.class);
                         intent.putExtra("type", "3");
                         startActivity(intent);
                         rb_1.setChecked(false);
+                        break;}
+                        case R.id.rb_2:{
+                        //政治专项
+                        Toast.makeText(activity, "转型", Toast.LENGTH_SHORT).show();
+                            //政治专项
+                            Intent intent = new Intent(getActivity(), Ti_Ying_Activity.class);
+                            intent.putExtra("type", "4");
+                            startActivity(intent);
+                            getActivity().finish();
+                        break;}
+                        case R.id.rb_5:
+                        //错题
+                            //错题库5    -----------和收藏复用2
+                            Intent intent = new Intent(getActivity(), Ti_ShouCangActivity.class);
+                            intent.putExtra("type", "5");
+                            startActivity(intent);
+
                         break;
                 }
             }

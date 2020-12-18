@@ -40,7 +40,12 @@ public class MyTitleBar extends LinearLayout implements View.OnClickListener {
         float v = array.getDimension(R.styleable.MyTitleBar_titleSize, 10);
         int color = array.getColor(R.styleable.MyTitleBar_titleDrawable, 0);
         int titleColor = array.getColor(R.styleable.MyTitleBar_titleColor, 0);
-
+        if(text.equals("政治专项")){
+            include_manager.setVisibility(GONE);
+        }
+        if(text.equals("答题")){
+            include_manager.setVisibility(GONE);
+        }
         if(text.equals("答题卡")){
             include_manager.setVisibility(GONE);
         }
@@ -65,7 +70,6 @@ public class MyTitleBar extends LinearLayout implements View.OnClickListener {
 
         if(text.equals("答题")){
             include_manager.setVisibility(GONE);
-            include_title.setVisibility(GONE);
         }
         include_title.setTextSize(v);
         include_fan.setTextSize(v);

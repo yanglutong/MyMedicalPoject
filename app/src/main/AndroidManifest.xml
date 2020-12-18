@@ -12,6 +12,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.Ti_ShouCangActivity"></activity>
+        <activity android:name=".activity.ZhuangXiangActivity"></activity>
+        <activity android:name=".activity.Ti_Ying_Activity"></activity>
+        <activity android:name=".activity.Ti_Ying_RecyActivity"></activity>
+        <activity android:name=".activity.Ti_Zheng_RecyActivity"></activity>
+        <activity android:name=".activity.TabZiActivity"></activity>
+        <activity android:name=".activity.Ti_Recy_ItemActivity"></activity>
         <activity android:name=".activity.English_ZhuanXIang_Activity"></activity>
         <activity android:name=".activity.DaTiCardActivity"></activity>
         <activity android:name=".ui.activity.CollectActivity"></activity>
