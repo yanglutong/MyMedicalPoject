@@ -39,7 +39,7 @@ import io.reactivex.schedulers.Schedulers;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 
-public class DaTiCardActivity extends AppCompatActivity {
+public class        DaTiCardActivity extends AppCompatActivity {
 
     private RecyclerView recycler;
 
