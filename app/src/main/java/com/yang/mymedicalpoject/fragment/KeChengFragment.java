@@ -114,7 +114,6 @@ public class KeChengFragment extends BaseMvpFragment<yiContantsKe.yiView, KeMode
         initData();
         /*    */
 
-
     }
 
     private void initData() {
